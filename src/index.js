@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 
-import store from './app/store'
+import store from './redux/store'
 import routes from './routes'
 import GlobalStyles from './globalStyles'
 import * as serviceWorker from './serviceWorker'
