@@ -2,8 +2,8 @@
 
 ### Local
 Run in separate terminal windows:
-`npm run react`
-`npm run node`
+```npm run react```
+```npm run node```
 
 
 ### Dev / Prod
