@@ -24,7 +24,7 @@ export const getUsers = () => dispatch => {
     .then(res => dispatch(setUsers(res.users)))
 }
 
-// THUNKS
+// SELECTORS
 export const selectUsers = state => state.exampleUsers.value
 
 export default slice.reducer
