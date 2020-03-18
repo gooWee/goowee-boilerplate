@@ -11,4 +11,6 @@ npm run node
 
 
 ### Dev / Prod
-`npm start` (builds and launches)
+```
+npm start
+```
