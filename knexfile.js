@@ -1,6 +1,13 @@
 const path = require('path')
 require('dotenv').config({ path: path.join(__dirname, '.env') })
 
+console.log('node env: ', process.env.NODE_ENV)
+console.log('user: ', process.env.PG_USERNAME)
+console.log('password: ', process.env.PG_PASSWORD)
+console.log('host: ', process.env.PG_HOST)
+console.log('database: ', process.env.PG_DATABASE)
+console.log('port: ', process.env.PG_PORT)
+
 module.exports = {
 
   local: {
@@ -21,9 +28,12 @@ module.exports = {
   development: {
     client: 'postgresql',
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      user: process.env.PG_USERNAME,
+      password: process.env.PG_PASSWORD,
+      host: process.env.PG_HOST,
+      database: process.env.PG_DATABASE,
+      port: process.env.PG_PORT,
+      ssl: true,
     },
     pool: {
       min: 2,
@@ -40,9 +50,12 @@ module.exports = {
   production: {
     client: 'postgresql',
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      user: process.env.PG_USERNAME,
+      password: process.env.PG_PASSWORD,
+      host: process.env.PG_HOST,
+      database: process.env.PG_DATABASE,
+      port: process.env.PG_PORT,
+      ssl: true,
     },
     pool: {
       min: 2,
