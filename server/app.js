@@ -6,6 +6,7 @@ const bodyParser = require('body-parser')
 
 const accountsRouter = require('./routes/accounts')
 
+console.log('starting express');
 const app = express()
 
 // view engine setup

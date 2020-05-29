@@ -3,7 +3,6 @@ require('dotenv').config({ path: path.join(__dirname, '.env') })
 
 console.log('node env: ', process.env.NODE_ENV)
 console.log('user: ', process.env.PG_USERNAME)
-console.log('password: ', process.env.PG_PASSWORD)
 console.log('host: ', process.env.PG_HOST)
 console.log('database: ', process.env.PG_DATABASE)
 console.log('port: ', process.env.PG_PORT)
